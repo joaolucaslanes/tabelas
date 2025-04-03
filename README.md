@@ -1,2 +1,2 @@
 # tabelas
- tebelas (HTML e CSS)
+ tebelas (HTML)
