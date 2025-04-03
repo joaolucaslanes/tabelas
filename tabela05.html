@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icone/html-icone.ico" type="image/x-icon">
+    <title>Exercício de Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: 900;
+            padding: 8px;
+        }
+
+        th,
+        td {
+            border: 1px solid #000000;
+            padding: 8px;
+        }
+
+        .destaque {
+            background-color: deeppink;
+        }
+
+        .nome {
+            background-color: blueviolet;
+        }
+
+        .sexo {
+            background-color: aquamarine;
+        }
+
+        .prof {
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>exercício de Tabela</h1>
+
+    <table>
+        <caption>Cadastro</caption>
+        
+        <colgroup>
+            <col class="nome">
+            <col class="sexo" span="2">
+            <col class="prof">
+        </colgroup>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <!-- Destacando com classe de forma individual(ideal para um único destaque ou apenas alguns)
+            obs : destacar aqui de froma direta anula outro estilo por cima desse, caso eu faça dentro do meu <style></style>  -->
+            <td class="destaque">Ana Maria</td>
+            <td>Fem</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>Masc</td>
+            <td>30</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>Masc</td>
+            <td>26</td>
+            <td>Engenheiro</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>Masc</td>
+            <td>44</td>
+            <td>Mecânico</td>
+        </tr>
+        <tr>
+            <td>Júlia</td>
+            <td>Fem</td>
+            <td>34</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Lívia</td>
+            <td>Fem</td>
+            <td>25</td>
+            <td>Dentista</td>
+        </tr>
+    </table>
+</body>
+
+</html>
